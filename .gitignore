@@ -1,0 +1,19 @@
+Quant_Data/
+.env
+env/
+
+tuneta_env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+*.pkl
+
+# Jupyter & VSCode
+.ipynb_checkpoints/
+.vscode/
+
+# talib whl
+ta_lib-0.6.3-cp310-cp310-win_amd64.whl
