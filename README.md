@@ -2,7 +2,7 @@
 
 ## 背景與靈感
 
-本作品集靈感來源於 Marcos López de Prado 所著之《Advances in Financial Machine Learning》，聚焦於**AI 與機器學習在金融市場上的實際應用**。透過書中所介紹的進階方法，如 Meta-labeling、Purged K-Fold、Sequential Bootstrap，以及特徵重要性計算（MDI、MDA），構建一條從資料處理、特徵工程到交易策略回測的完整流程。
+本作品集靈感來源於 Marcos López de Prado 所著之《Advances in Financial Machine Learning》，聚焦於**AI 與機器學習在金融市場上的實際應用**。透過書中所介紹的進階方法，如 Meta-labeling、Purged K-Fold、Sequential Bootstrap，以及特徵重要性計算（MDI、MDA、SFI），構建一條從資料處理、特徵工程到建構交易策略的完整流程。
 
 ## 作品集概述
 
@@ -31,18 +31,18 @@ Motivation: 在訓練模型時用同性質商品而非單一商品資料進行�
     5. 使用Kmeans將PCA的結果分群，並將相似的商品歸類在同一群組
 * **輸出**：`clusters.csv`
 
-### 2. 特徵重要性計算 (MDI/MDA/SFI)- Project2_Feature_Importance.ipynb
+### 2. 特徵重要性計算 (MDI/MDA/SFI) - Project2_Feature_Importance.ipynb
 
 Motivation：在金融領域中，特徵選擇對模型性能與穩健性至關重要。透過隨機森林的 MDI (Mean Decrease Impurity) 來量化每項特徵對模型的貢獻，同時以 MDA (Mean Decrease Accuracy) 和 SFI(Single Factor Importance)來評估特徵在不同資料抽樣下的穩定性，並利用PCA降低特徵間的substitution effect。此流程能協助識別關鍵且可靠的特徵，降低過度擬合風險並提升策略泛化能力。
 
 * **輸入**：`clusters.csv` 和券商資料集
 * **步驟**：
-      1. 篩選含黃金的群集資料
-      1. 將資料轉換為dollar bars
-      1. 進行metalabling產生標籤
-      1. 計算指標，並對非平穩指標進行Fractional Difference
-      1. 使用PCA排除共線性，降低特徵間的substitution effect
-      1. 用Purged K-Fold CrossValidation和RandomForest，計算 MDI/MDA/SFI
+    1. 篩選含黃金的群集資料
+    2. 將資料轉換為dollar bars
+    3. 進行metalabling產生標籤
+    4. 計算指標，並對非平穩指標進行Fractional Difference
+    5. 使用PCA排除共線性，降低特徵間的substitution effect
+    6. 用Purged K-Fold CrossValidation和RandomForest，計算 MDI/MDA/SFI
 * **輸出**：`mdi.csv`, `mda.csv`, `sfi.csv`
 
 ### 3. 交易模型建置 (Meta-labeling + 模型訓練) - Project3_MetaLabeling_Trading.ipynb
