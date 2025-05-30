@@ -2,6 +2,8 @@ Quant_Data/
 .env
 env/
 
+intermediate_results/
+
 tuneta_env/
 __pycache__/
 *.py[cod]
