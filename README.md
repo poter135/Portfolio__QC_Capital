@@ -156,7 +156,5 @@ Portfolio__QC_Capital/
 ```
 
 ---
-
----
 ## 參考文獻
 López de Prado, M. (2018). Advances in Financial Machine Learning. Wiley.
