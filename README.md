@@ -148,7 +148,6 @@
 ```
 Portfolio__QC_Capital/
 ├── .gitignore
-├── intermediate_results/
 ├── models/
 │   ├── bagging_RF.joblib
 │   └── pipeline_scaler_pca.joblib
