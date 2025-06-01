@@ -23,7 +23,7 @@
 
 1. **Project1：商品特徵分群 (Clustering: PCA + KMeans)**  
 2. **Project2：特徵重要性計算 (Feature Importance: MDI / MDA / SFI)**  
-3. **Project3：Meta-Labeling應用示範**  
+3. **Project3：Meta-Labeling應用示範 (Meta-Labeling + 模型訓練)**  
 
 下列章節將依序介紹每個子專案的動機、流程及輸入輸出。
 
@@ -114,7 +114,7 @@
 
 ---
 
-## 3. Meta-Labeling應用示範
+## 3. Meta-Labeling應用示範 (Meta-Labeling + 模型訓練)
 
 ### 動機
 - 直接在原始市場資料上套用機器學習，容易因市場結構差異而失敗。  
