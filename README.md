@@ -44,7 +44,7 @@
    - 輸出每個商品在主成分空間的坐標 (Principal Component Scores)。
 
 5. **KMeans 分群**  
-   - 以前兩（或更多）主成分坐標為輸入，使用 KMeans 演算法分群。  
+   - 以主成分坐標為輸入，使用 KMeans 演算法分群。  
    - 根據Silhouette Score選擇最佳群數 \(K\)。  
    - 最終輸出 `clusters.csv`，記錄「商品名稱 → 群組編號」。
 
@@ -89,6 +89,7 @@
 
 6. **結果匯出與可視化**  
    - 輸出 `mdi.csv`、`mda.csv`、`sfi.csv`，記錄各特徵之重要性排序。  
+   - 輸出 `pca pipline` 用於後續資料處裡
    - 繪製特徵重要性長條圖，用以比較不同方法下特徵分佈。
 
 ### 輸入
@@ -98,7 +99,8 @@
 ### 輸出
 - `results/mdi.csv`：MDI 排序結果。  
 - `results/mda.csv`：MDA 排序結果。  
-- `results/sfi.csv`：SFI 排序結果。  
+- `results/sfi.csv`：SFI 排序結果。 
+- `models/pipeline_scaler_pca.jolib` : pca pipeline。 
 
 ---
 
