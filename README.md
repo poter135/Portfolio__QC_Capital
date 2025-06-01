@@ -5,7 +5,7 @@
 - [作品集結構](#作品集結構)
 - [Project1：商品特徵分群 (Clustering: PCA + KMeans)](#project1商品特徵分群-clustering-pca--kmeans)
 - [Project2：特徵重要性計算 (Feature Importance: MDI / MDA / SFI)](#project2特徵重要性計算-feature-importance-mdi--mda--sfi)
-- [Project3：交易模型建置 (Meta-Labeling + 模型訓練)](#project3交易模型建置-meta-labeling--模型訓練)
+- [Project3：Meta-Labeling應用示範 (Meta-Labeling + 模型訓練)](#project3交易模型建置-meta-labeling--模型訓練)
 - [專案結構](#專案結構)
 - [參考文獻](#參考文獻)
 
