@@ -1,9 +1,9 @@
-# 作品集總覽 (Portfolio Overview)
+# 作品集總覽 
 
 ## 背景與靈感
 
 本作品集靈感來源於 Marcos López de Prado 所著之《Advances in Financial Machine Learning》，聚焦於**機器學習在金融市場上的實際應用**。  
-透過書中所介紹的進階方法，如 Meta-Labeling、Purged K-Fold、Sequential Bootstrap，以及特徵重要性計算（MDI、MDA、SFI），構建一條從資料處理、特徵工程到建構交易策略的完整流程。
+透過書中所介紹的進階方法，如 Meta-Labeling、Purged K-Fold、Sequential Bootstrap，以及特徵重要性計算（MDI、MDA、SFI），構建一條從資料處理、特徵工程到建構交易模型的完整流程。
 
 ---
 
